@@ -1,0 +1,42 @@
+# 🔹 Virtual Environment
+proenv/
+env/
+venv/
+
+
+# 🔹 Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# 🔹 Jupyter Notebook
+.ipynb_checkpoints/
+
+
+# folder
+# data/
+
+
+# 🔹 Logs
+*.log
+
+
+# 🔹 OS files
+.DS_Store
+Thumbs.db
+
+
+# 🔹 VS Code settings
+.vscode/
+
+
+# 🔹 Temporary files
+*.tmp
+*.temp
+
+
+# 🔹 Database files (if any)
+*.db
+*.sqlite3
