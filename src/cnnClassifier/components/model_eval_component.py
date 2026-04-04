@@ -78,7 +78,7 @@ class Evaluation:
 
 
         # Save model explicitly with .keras extension
-        model_path = "artifacts/training/model.keras"
+        model_path = r"C:\Vivek\Study\AI\kidney_tumor_prediction\artifacts\training\model.keras"
         self.model.save(model_path)
 
 
@@ -92,5 +92,28 @@ class Evaluation:
                 "runs:/{}/model.keras".format(mlflow.active_run().info.run_id),
                 "VGG16Model"
             )
+    
+    
+    # def log_into_mlflow(self):
+    #     mlflow.set_registry_uri(self.config.mlflow_uri)
+    #     tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
+    #     with mlflow.start_run() as run:
+    #     # log params + metrics
+    #         mlflow.log_params(self.config.all_params)
+    #         mlflow.log_metrics({
+    #         "loss": self.score[0],
+    #         "accuracy": self.score[1]
+    #         })
 
+    #     # ✅ LOG MODEL PROPERLY (not just artifact)
+    #         mlflow.keras.log_model(self.model, "model")
+
+    #     # register model
+    #         if tracking_url_type_store != "file":
+    #             mlflow.register_model(
+    #             f"runs:/{run.info.run_id}/model",
+    #             "VGG16Model"
+    #         )
+
+    
